@@ -56,7 +56,7 @@ public class AlbumsController {
                 tryToUploadCover(albumId, uploadedFile);
 
             } catch (IOException e) {
-                logger.warn("Error while uploading album cover", e);
+                logger.error("There was an error while uploading album cover", e);
             }
         }
 
